@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dribble</title>
+</head>
+<style>
+    .logo {
+        margin-left: 20px;
+        margin-top: -5px;
+    }
+    .text {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 14px;
+        margin-left: 185px;
+        margin-top: -57px;
+        color: rgb(48, 48, 48);
+        width: 200px;
+    }
+
+    .text:hover {
+        color: grey;
+        cursor: pointer;
+    }
+
+    .parth {
+        margin-left: 240px;
+        margin-top: -32px;
+    }
+
+    .chal {
+        display: grid;
+        grid-template-columns: 100px 150px 100px 100px;
+    }
+
+    .h3 {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 14px;
+        color: rgb(48, 48, 48);
+        width: 100px;
+        margin-left: 1150px;
+        margin-top: -60px;
+    }
+
+    .clg {
+        display: grid;
+        grid-template-columns: repeat(2, 100px);
+    }
+
+    .h {
+        background-color: black;
+        text-align: center;
+        color: white;
+        margin-left: 1120px;
+        margin-top: -75px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 25px;
+        width: 80px;
+    }
+
+    .h:hover {
+        background-color: #565564;
+    }
+
+    .j:hover {
+        color: rgb(48, 48, 48);
+    }
+
+    .oo {
+        margin-left: 380px;
+        margin-top: 45px;
+        font-size: 60px;
+        width: 600px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .hu {
+        margin-top: -50px;
+        margin-left: 475px;
+    }
+
+    .class {
+        margin-left: 425px;
+        margin-top: -20px;
+        font-size: 19px;
+    }
+
+    .class1 {
+        font-size: 19px;
+        margin-left: 540px;
+        margin-top: 5px;
+    }
+
+    .h2 {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 15px;
+        margin-left: 10px;
+        padding-top: 10px;
+        height: 30px;
+        margin-left: 10px;
+        width: 648px;
+    }
+
+    .search {
+        background-color: rgb(224, 224, 224);
+        height: 45px;
+        margin-left: 350px;
+        width: 650px;
+        border-radius: 25px;
+    }
+
+    .searchbarniniche {
+        display: grid;
+        grid-template-columns: repeat(7, 105px);
+        margin-left: 310px;
+        margin-top: 25px;
+    }
+
+    .jingo {
+        width: 100px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        border-radius: 25px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: rgb(223, 223, 223);
+        text-align: center;
+    }
+
+    .jingo:hover {
+        background-color: white;
+    }
+
+    .pop {
+        border: 1px solid grey;
+        width: 100px;
+        height: 35px;
+        margin-top: 60px;
+        margin-left: 80px;
+    }
+
+    .popu {
+        margin-top: -15px;
+        margin-left: 10px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .popbaju {
+        display: grid;
+        grid-template-columns: repeat(8, 100px);
+        margin-left: 290px;
+        margin-top: -30px;
+    }
+
+    .k {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .pictureclass {
+        display: grid;
+        grid-template-columns: repeat(4, 310px);
+        grid-template-rows: repeat(11, 260px);
+        margin-top: 40px;
+        margin-left: 75px;
+    }
+
+    .pictures {
+        border-radius: 10px;
+    }
+
+    .small {
+        display: grid;
+        grid-template-columns: repeat(4, 310px);
+        grid-template-rows: repeat(11, 260px);
+        margin-top: -2650px;
+        margin-left: 80px;
+    }
+
+    .image {
+        border-radius: 35px;
+    }
+
+    .veer {
+        display: grid;
+        grid-template-columns: repeat(4, 310px);
+        grid-template-rows: repeat(11, 260px);
+        margin-top: -2860px;
+        margin-left: 115px;
+    }
+
+    .veerna {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .team {
+        display: grid;
+        grid-template-columns: repeat(4, 310px);
+        grid-template-rows: repeat(11, 260px);
+        width: 0px;
+        height: 0px;
+    }
+
+    .name {
+        background-color: grey;
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        height: 20px;
+        width: 40px;
+        padding-top: 3px;
+        font-size: 11px;
+        border-radius: 5px;
+        text-align: center;
+        margin-top: -2860px;
+        margin-left: 245px;
+    }
+    .ho{
+        margin-top: -170px;
+        margin-left: 580px;
+        width: 200px;
+        background-color: rgb(16, 16, 77);
+        text-align: center;
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding-bottom: 7px;
+        padding-top: 5px;
+        border-radius: 15px;
+    }
+    .ho:hover{
+        background-color: #565564;
+    }
+    .badass{
+        display: grid;
+        grid-template-columns: repeat(6,220px);
+        margin-top: 100px;
+        margin-left: 25px;
+    }
+    .maint{
+        display: grid;
+        grid-template-columns: repeat(6,220px);
+        margin-left: 25px;
+    }
+    .text1{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+    .network{
+        display: grid;
+        grid-template-columns: repeat(8,100px);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-left: 200px;
+        margin-top: -70px;
+    }
+    .fu{
+        display: grid;
+        grid-template-columns: repeat(4,35px);
+        margin-left: 1200px;
+        margin-top: -20px;
+    }
+    .left{
+        display: grid;
+        grid-template-columns: repeat(10,100px);
+        margin-top: 90px;
+    }
+    .apna{
+        width: 120px;
+        color: #565564;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+</style>
+<body>
+    <div class="navbar">
+        <div class="logo"><img width="115px" src="Dribbble logo.png" alt=""></div>
+        <div class="chal">
+            <div class="he">
+                <div>
+                    <h3 class="text">Explore</h3>
+                </div>
+                <div class="parth"><img width="17px" src="down-arrow.png" alt=""></div>
+            </div>
+            <div class="he">
+                <div>
+                    <h3 class="text">Hire a Designer</h3>
+                </div>
+                <div style="margin-left: 295px;" class="parth"><img width="17px" src="down-arrow.png" alt=""></div>
+            </div>
+            <div class="he">
+                <div>
+                    <h3 class="text">Find jobs</h3>
+                </div>
+            </div>
+            <div class="he">
+                <div>
+                    <h3 class="text">Blog</h3>
+                </div>
+            </div>
+        </div>
+        <div class="clg">
+            <div class="clgt">
+                <h3 class="h3 j">Sign Up</h3>
+            </div>
+            <div class="clgt">
+                <h3 class="h3 h">Log In</h3>
+            </div>
+        </div>
+    </div>
+    <div class="heading">
+        <h1 class="oo">Discover the world's</h1>
+    </div>
+    <div class="heading">
+        <h1 class="oo hu">top Designers</h1>
+    </div>
+    <div class="class">Explore work from the most talented and accomplished designers</div>
+    <div class="class1">ready to take on your next project</div>
+    <div class="search">
+        <h2 class="h2">What are you looking for?</h2>
+    </div>
+    <div class="searchbarniniche">
+        <div class="jingo">Trending</div>
+        <div class="jingo">landing page</div>
+        <div class="jingo">e-commerce</div>
+        <div class="jingo">mobile app</div>
+        <div class="jingo">logo design</div>
+        <div class="jingo">dashboard</div>
+        <div class="jingo">icons</div>
+    </div>
+    <div class="pop">
+        <div class="popu">
+            <h4 class="h4">Popular</h4>
+        </div>
+    </div>
+    <div class="popbaju">
+        <div class="k">Discover</div>
+        <div class="k">Animation</div>
+        <div class="k">Branding</div>
+        <div class="k">Illustration</div>
+        <div class="k">Mobile pro</div>
+        <div class="k">Print Des.</div>
+        <div class="k">Product Des.</div>
+        <div class="k">Typo</div>
+    </div>
+    <div class="maru">
+        <div class="pictureclass">
+            <div class="picture"><img class="pictures" width="270px" src="pic 1.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 2.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 3.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 4.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 5.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 6.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 7.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 8.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 9.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 10.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 11.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 12.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 49.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 15.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 16.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 17.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 18.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 19.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 20.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 21.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 22.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 23.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 24.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 25.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 26.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 27.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 28.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 29.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 30.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 31.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 32.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 33.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 34.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 35.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 36.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 37.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 38.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 39.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 40.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 41.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 42.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 43.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 44.png" alt=""></div>
+            <div class="picture"><img class="pictures" width="270px" src="pic 45.png" alt=""></div>
+        </div>
+        <div class="small">
+            <div class="pics"><img class="image" width="25px" src="small pic 1.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 2.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 3.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 4.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 5.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 6.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 7.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 8.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 9.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 10.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 11.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 12.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 13.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 14.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 15.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 16.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 17.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 18.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 19.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 20.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 21.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 22.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 23.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 24.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 25.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 26.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 27.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 28.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 29.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 30.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 31.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 32.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 33.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 34.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 35.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 36.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 1.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 2.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 3.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 4.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 5.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 6.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 7.png" alt=""></div>
+            <div class="pics"><img class="image" width="25px" src="small pic 8.png" alt=""></div>
+        </div>
+        <div class="veer">
+            <div class="veerna">Marka Works</div>
+            <div class="veerna">Keitoto</div>
+            <div class="veerna">Extej UI UX</div>
+            <div class="veerna">Vectora</div>
+            <div class="veerna">Gintera</div>
+            <div class="veerna">Emote</div>
+            <div class="veerna">Callour Studio</div>
+            <div class="veerna">Caraka</div>
+            <div class="veerna">Odama</div>
+            <div class="veerna">Vektora</div>
+            <div class="veerna">One week</div>
+            <div class="veerna">Jowel Ahemed</div>
+            <div class="veerna">Touhid</div>
+            <div class="veerna">Pappermint</div>
+            <div class="veerna">Fikri Studio</div>
+            <div class="veerna">Masud</div>
+            <div class="veerna">Musemind</div>
+            <div class="veerna">Kreyda</div>
+            <div class="veerna">Nayan tamil</div>
+            <div class="veerna">Notowe</div>
+            <div class="veerna">Fahim Khan</div>
+            <div class="veerna">10am studio</div>
+            <div class="veerna">Slab pixel</div>
+            <div class="veerna">Sumoun Yusuf</div>
+            <div class="veerna">theosm</div>
+            <div class="veerna">Alex tass</div>
+            <div class="veerna">Ronas IT</div>
+            <div class="veerna">Type 08</div>
+            <div class="veerna">Sans Brothers</div>
+            <div class="veerna">VALMAX</div>
+            <div class="veerna">Hatypo Studio</div>
+            <div class="veerna">Motaleb hassain</div>
+            <div class="veerna">Marka Works</div>
+            <div class="veerna">Rony Ahemed</div>
+            <div class="veerna">Iogorrila</div>
+            <div class="veerna">HALO LAB</div>
+            <div class="veerna">Andri kovalchu</div>
+            <div class="veerna">Emura</div>
+            <div class="veerna">Ronas IT</div>
+            <div class="veerna">Abir Style</div>
+            <div class="veerna">Oleg Coada</div>
+            <div class="veerna">Flatonica</div>
+            <div class="veerna">VALMAX</div>
+            <div class="veerna">Ronas IT</div>
+        </div>
+        <div class="team">
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+            <div class="name">TEAM</div>
+        </div>
+        <div class="ho">Sign up to continue</div>
+        <div class="badass">
+            <div class="ass"><img width="200px" src="nice pic 1 (1).png" alt=""></div>
+            <div class="ass"><img width="200px" src="nice pic 1 (2).png" alt=""></div>
+            <div class="ass"><img width="200px" src="nice pic 1 (3).png" alt=""></div>
+            <div class="ass"><img width="200px" src="nice pic 1 (4).png" alt=""></div>
+            <div class="ass"><img width="200px" src="nice pic 1 (5).png" alt=""></div>
+            <div class="ass"><img width="200px" src="nice pic 1 (6).png" alt=""></div>
+        </div>
+        <div class="maint">
+            <div class="text1">Mobile</div>
+            <div class="text1">Product Design</div>
+            <div class="text1">Animation</div>
+            <div class="text1">Web Design</div>
+            <div class="text1">Illustration</div>
+            <div class="text1">Branding</div>
+        </div>
+        <img style="margin-top: 20px;margin-left: 40px;" width="135px" src="Dribbble logo.png" alt="">
+        <div class="network">
+            <div class="thak">For Design</div>
+            <div class="thak">Hire Talent</div>
+            <div class="thak">Inspiration</div>
+            <div class="thak">Advertising</div>
+            <div style="margin-left: 20px;" class="thak">Blog</div>
+            <div class="thak">About</div>
+            <div style="margin-left: -20px;" class="thak">Careers</div>
+            <div class="thak">Support</div>
+        </div>
+        <div class="fu">
+            <div class="shu"><img width="20px" src="twitter (1).png" alt=""></div>
+            <div class="shu"><img width="20px" src="facebook (4).png" alt=""></div>
+            <div class="shu"><img width="20px" src="instagram.png" alt=""></div>
+            <div class="shu"><img width="20px" src="pinterest.png" alt=""></div>
+        </div>
+        <div class="left">
+            <div class="apna">©2024 Dribbble</div>
+            <div style="text-align: center;" class="apna">Terms</div>
+            <div class="apna">Privacy</div>
+            <div style="margin-left: -20px;" class="apna">Cookies</div>
+            <div style="margin-left: 480px;" class="apna">Jobs</div>
+            <div style="margin-left: 430px;" class="apna">Designers</div>
+            <div style="margin-left: 430px;" class="apna">Freelancers</div>
+            <div style="margin-left: 430px;" class="apna">Tags</div>
+            <div style="margin-left: 380px;" class="apna">Places</div>
+            <div style="margin-left: 350px;" class="apna">Resources</div>
+        </div>
+    </div>
+</body>
+</html>
